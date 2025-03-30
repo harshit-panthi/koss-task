@@ -12,6 +12,7 @@ use httpreq::*;
 
 fn main() {
   let listener = TcpListener::bind("127.0.0.1:1560").unwrap();
+  println!("started serving on 127.0.0.1:1560");
   let tp = ThreadPoolHandle::new(4);
 
   for stream in listener.incoming() {
