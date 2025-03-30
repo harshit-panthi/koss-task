@@ -3,7 +3,7 @@ Partly based on go runtime's M:N scheduler and implements work stealing
 
 # How the borrow checker and rust's type system are advantageous for safety
 
-The ownership system and the borrow check together prevent use after frees and dangling pointers with the concept of lifetimes and
+The ownership system and the borrow checker together prevent use after frees and dangling pointers with the concept of lifetimes and
 prevent data races by ensuring that no more that one mutable reference can exist at a given time.
 
 Rust's rich type system allows it to better model data. For example, while most other languages have a concept of null pointers, rust avoids them with its sum types (enums).
