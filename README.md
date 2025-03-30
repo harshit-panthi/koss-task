@@ -1,5 +1,5 @@
 # Threadpool architecture
-Partly based on go runtime's M:P:N scheduler and implements work stealing
+Partly based on go runtime's M:N scheduler and implements work stealing
 
 # How the borrow checker and rust's type system are advantageous for safety
 
